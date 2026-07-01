@@ -31,7 +31,7 @@ yargs(hideBin(process.argv))
   })
   .help(true).argv;
 
-//process.argv->['node','/path/to/script.js','arg1','arg2']
+ process.argv->['node','/path/to/script.js','arg1','arg2']
 
 const argv = yargs(process.argv.slice(2)).argv;
 
@@ -76,4 +76,5 @@ if (typeof argv?.language !== "string" && typeof argv?.l !== "string") {
       console.error(err);
     });
 }
+//add comment for testing purposes
 //add comment for testing purposes
